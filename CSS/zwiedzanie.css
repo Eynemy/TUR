@@ -1,0 +1,605 @@
+
+
+
+
+body{
+    margin: 0;
+    background-image: url("/Obrazy/tlo3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-weight: bold;
+}
+
+/* Główny blok */
+#content{
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+
+    /* box-shadow: 10px 10px 5px grey; */
+    box-shadow: #8dc5df 0px 2px 10px 10px;
+}
+
+/* -=-=-=-=-=-=-=-=-==-=-= Stylizacj Nagłówków -=-=-=-=-=-=-=-=-==-=-= */
+
+/* Tytuł Strony ( Miasto ) */ /* usunac z walut i pogody */
+h1{   
+    text-align: center;
+    font-size: 62px;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+/* Nagłówki 1 stopnia */
+h2{
+    text-align: center;
+    /* font-size: 300%; */
+    font-size: 3.25em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #333;
+}
+/* Nagłówwk 2  stopnia  */
+h3{ 
+    font-family: Arial, sans-serif;
+    font-size: 2.25em;
+    font-weight: 400;
+    color: #21272B;
+    padding-left: 2%;
+}
+
+/* Ostatnia aktualizacja (kiedy była) */ /* Usunac z pogody */
+h5{ 
+    padding-left: 2%;
+    font-weight: bold;
+}
+
+/* ścieżka strony */
+h6{
+    padding-left: 1%;
+    padding-top: 1%;
+}
+h6 > a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* font-size: 16px; */
+    font-size: 0.9vw;
+    font-family: 'Rubik', sans-serif;
+        
+}
+h6 > a:hover{
+    cursor: pointer;
+    color: rgb(114, 113, 113);
+}
+
+#more_than > img{
+    width: 0.9vw;
+    height: 0.9vw;
+    position: relative;
+    top: 0.1vw;
+    padding: 0 2px 0 2px;
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Stylizacja HR -=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/* Hr - Szwecja */
+.hr_szwecja{
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, white, #005cbf, #ffc720, #005cbf, white);
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/* Spis treści */
+.spis > ol{
+    color: black;
+    font-size: 200%;
+    font-weight: bold;
+    
+}
+.spis{
+    border: 2px rgb(228, 221, 125) solid;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.spis > ol > li >a{
+    font-weight: 700 !important;
+    text-decoration: none;
+    color: black;
+}
+/* Stylizaca numerkow w spisei po kliknieciu */
+.spis > ol > li:hover{ 
+    color: #668bd1;
+}
+.spis > ol > li >a:hover{
+    color: #668bd1;
+}
+
+
+
+
+p{
+    margin-right: 2%;
+    margin-left: 2%;
+    /* text-align: justify; */
+    font-weight: bold;
+
+    color: rgb(43, 43, 43);
+    
+    font-size: 1.5em;
+}
+
+ul > li{
+    font-weight: 900;
+    /* padding-left: 2%; */
+    padding-right: 2%;
+    color: #21272B;
+}
+ul{
+    font-weight: 900;
+    font-size: x-large;
+    padding-left: 4%;
+    padding-right: 2%;
+    /* color: #009688;  */
+}
+
+/* p{
+   font-size: x-large !important; 
+} */
+
+
+
+.img-zoom {
+    width: 70%;
+    height: 49%;
+    overflow: hidden;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+  
+.img-zoom img {
+    width: 100%;
+    height: auto;
+    /* transform-origin: right center; */
+    transition: transform .5s ease;
+    cursor: zoom-in;
+}
+  
+  .img-zoom:hover img {
+    transform: scale(1.7);
+}
+
+
+.Android{
+    color: white !important;
+    text-decoration: none;
+    background-color: #009688;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 170px;
+}
+.Android > a{
+    color: white !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: normal;
+}
+.Android > a > img {
+    vertical-align: middle;
+    margin-left: 10px;
+    position: relative;
+    top: -5px;
+}
+.Android:hover {
+    background-color: #00695c;
+    transition: all 0.4s ease 0s;
+}
+
+.iOS{
+    color: white !important;
+    text-decoration: none;
+    background-color: #007aff; /* Niebieski kolor iOS */
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 120px;
+}
+.iOS > a{
+    color: white !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: normal;
+}
+.iOS > a > img {
+    vertical-align: middle;
+    margin-left: 10px;
+    position: relative;
+    top: -3px;
+}
+.iOS:hover {
+    background-color: #0051a8; /* Ciemniejszy odcień niebieskiego */
+    transition: all 0.4s ease 0s;
+}
+
+.Web{
+    color: white !important;
+    text-decoration: none;
+    background-color: #ff5722;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 170px;
+    height: 51px; /* Dodaj tę linię, aby ustawić wysokość */
+}
+.Web > a{
+    color: white !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: normal;
+}
+.Web:hover {
+    background-color: #e64a19;
+    transition: all 0.4s ease 0s;
+}
+.Web > a > img {
+    vertical-align: middle;
+    margin-left: 10px;
+    position: relative;
+    top: -3px;
+}
+
+
+
+
+
+.mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #009688;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.mapa {
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 50%;
+    margin: 0 auto; /* To wyśrodkowuje div na stronie */
+}
+
+
+
+/* Styl dla Airbnb */
+.Airbnb{
+    color: white !important;
+    text-decoration: none;
+    background-color: #FF5A5F; /* Czerwony kolor Airbnb */
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 170px;
+}
+.Airbnb > a{
+    color: white !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.Airbnb:hover {
+    background-color: #FF0000;
+    transition: all 0.4s ease 0s;
+}
+
+/* Styl dla Booking */
+.booking{
+    color: white !important;
+    text-decoration: none;
+    background-color: #003580; /* Niebieski kolor Booking */
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 170px;
+}
+.booking > a{
+    color: white !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.booking:hover {
+    background-color: #002663;
+    transition: all 0.4s ease 0s;
+}
+
+/* Styl dla Nasze */
+.nasze{
+    color: white !important;
+    text-decoration: none;
+    background-color: #00A699; /* Zielony kolor Nasze */
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 170px;
+}
+.nasze > a{
+    color: white !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.nasze:hover {
+    background-color: #008577;
+    transition: all 0.4s ease 0s;
+}
+/* Styl wizzair */
+.Wizz_Air{
+    color: white !important;
+    text-decoration: none;
+    background-color: #b90c82; /* Czerwony kolor Airbnb */
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 170px;
+}
+.Wizz_Air > a{
+    color: white !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.Wizz_Air:hover {
+    background-color: #8d0760;
+    transition: all 0.4s ease 0s;
+}
+/* Stl raynair */
+.Ryanair{
+    color: white !important;
+    text-decoration: none;
+    background-color: #042454;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 170px;
+}
+.Ryanair > a{
+    color: white !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.Ryanair:hover {
+    background-color: #041443;
+    transition: all 0.4s ease 0s;
+}
+/*  */
+
+.przyciski{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Dodaje odstęp między przyciskami */
+}
+
+.centrum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.currency-input, .currency-button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 200px;
+}
+.currency-button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.currency-button:hover {
+    background-color: #00695c;
+}
+.result {
+    font-size: 20px;
+    color: #009688;
+    margin-top: 20px;
+}
+/* .kurs > h1, h2, h4, p{
+    color: #333 !important;
+}
+.kurs{
+    font-size: 2em !important;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}  */
+#kurs_waluty{
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    /* padding: 50px; */
+    text-align: center;
+}
+#kurs_waluty h3{
+    text-align: center;
+}
+#kurs_waluty p{
+    text-align: center;
+}
+
+/*  */
+.kalkulator_div {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+
+#koszt_lotu, #koszt_pociagu, #koszt_zakwaterowania, #liczba_osob, #koszt_transportu, .calculate-button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 200px;
+}
+.calculate-button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.calculate-button:hover {
+    background-color: #00695c;
+}
+.result {
+    font-size: 20px;
+    color: #009688;
+    margin-top: 20px;
+}
+
+
+/*  */
+.pogoda_div{
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    padding: 50px;
+    text-align: center;  
+}
+/* .pogoda_div > h1{
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 2.5em;
+} */
+.pogoda_div > h3{
+    font-weight: 600;
+}
+.pogoda_div > h1, h2, p {
+    color: #333;
+}
+.weather-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.weather-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+}
+.pogoda_img{
+    width: 50%;
+}
+
+
+#Aplikacja_img{
+    /* width: 500px; */
+    border-radius: 10px;
+    width: 20%;
+
+}
+#Aplikacja_strona{
+    border-radius: 15px;
+    width: 80%;  
+}
+
+.table{
+    padding-left: 30%;
+}
+table {
+    padding-left: 2;
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  }
+  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  th, td {
+    padding: 12px 15px;
+  }
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+
+.link{
+    color: #668bd1;
+    text-decoration: none;
+}
+.link:hover{
+    color: #064dd1;
+
+   
+}
+
+.opis_obrazka{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    color: #21272B;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+

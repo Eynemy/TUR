@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<header id="navbar">
+    <div id="logo"><img src="/Obrazy/ikona.png" width="50px" alt=""></div>
+    <div id="name"><b>EN TUR</b></div>
+    <div class="nav">
+        <ol>
+            <li><a href="/glowna.html"><span class="text-underline">Strona główna</span></a></li>
+            <li><a href="/Podstrony/kraje/kraje.html"><span class="text-underline">Kraje</span></a></li>
+            <li><a href="/Podstrony/Odwiedzone/odwiedzone.html"><span class="text-underline">Odwiedzone</span></a></li>
+            <li><a href="/Podstrony/Info/informacje.html"><span class="text-underline">Info</span></a></li>
+        </ol>
+    </div>
+    <div id="Wyszukiwarka">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Szukaj..." autocomplete="off">
+        <ul id="myUL">
+            <!-- Tutaj umieść swoje linki -->
+        </ul>
+    </div>
+</header><div style="clear: both;"></div>
+<div id="content">
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    siema
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+1. Sztokholm
+2. Malta
+3. Alesund
+4. Tronheim
+5. Haugesund
+6. San Marino
+7. Riga
+8. Budapeszt
+
+9. Wilno
+10. Wieden
+11. Bratysława
+12. Stavanger
+13. Benelux
+
+
+
+stronaa:
+1. Cena biletów
+2. kalkulator kosztów
+
+
+1. Dojaazd z lotniska
+2. transport
+3. Pogoda
+4. Zwiedzanie
+5. mieszkania
+
+
+zrobic sticky menu
+zrobic taki guziczek ktory pzowala na wejscie na gore strony
+zrobic przy cenach ze jak sie najedzie to wedlug aktualnego kursu pokazuje ile to w zł
+
+47zł
+
+https://poznanairport.pl/loty/mapa-polaczen/sztokholm/
+
+Gamla Stan
+Historyczna dzielnica położona na kilku wyspach. Jedna z najpiękniejszych części miasta, pozycja obowiązkowa dla każdego turysty!
+
+Pałac Królewski
+Wybudowany na wyspie Stadsholmen, w dzielnicy Gamla Stan. Pałac pełni funkcje reprezentacyjne – tutaj odbywają się wszystkie oficjalne ceremonie. Jest to jeden z największych pałaców w całej Europie. W jego skład wchodzi blisko 600 pokoi oraz pomieszczeń. Koniecznie też trzeba zobaczyć odbywająca się codziennie uroczystą zmianę warty. Sprawdź więcej informacji.
+
+Wycieczka po kanałach królewskich
+Rejs tramwajem wodnym “pod mostami Sztokholmu” pozwala zobaczyć miasto z zupełnie innej perspektywy, koszt ok. 260 SEK .
+
+Hala targowa Östermalms
+W budynku hali zbudowanej w roku 1888 r. mieści się niezliczona ilość stoisk gastronomicznych oferujących przepyszne jedzenie.
+
+Muzeum Abby
+Miejsce poświęconemu jednemu z najbardziej popularnych zespołów muzycznych wszech czasów. Sprawdź więcej informacji.
+
+
+window.onscroll = function() {M_Stickynav()};
+
+var navbar = document.getElementById("navbar");
+var header = document.getElementsByClassName("header")[0];
+
+var sticky = navbar.offsetTop;
+
+function M_Stickynav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+    header.style.marginBottom = "61px"; 
+
+    // button.style.display = "none";
+  } else {
+    navbar.classList.remove("sticky");
+    header.style.marginBottom = "0";
+
+    // button.style.display = "block";
+
+    
+  }
+}
+
+
+// skrypt na sticky nawigacje
+$(document).ready(function() {
+  var NavY = $('.nawigacja').offset().top;
+  
+  var stickyNav = function(){
+  var ScrollY = $(window).scrollTop();
+      
+  if (ScrollY > NavY) { 
+      $('.nawigacja').addClass('sticky');
+  } else {
+      $('.nawigacja').removeClass('sticky'); 
+  }
+  };
+  
+  stickyNav();
+  
+  $(window).scroll(function() {
+      stickyNav();
+  });
+  });
+  

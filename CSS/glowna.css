@@ -1,0 +1,12 @@
+#content{
+    margin: 0;
+    background-image: url("/Obrazy/tlo3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+.bloki{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: wheat;
+    border-radius: 2% 2% 0 0;
+}
