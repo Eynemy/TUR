@@ -34,6 +34,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
 #lista{
@@ -84,4 +85,21 @@ h1{
     font-family: 'Protest Strike', sans-serif;
     
 } 
+@media screen and (max-width: 500px) {
+    #lista > a >img{
+        width: 360px;
+        height: 250px;
+        border-radius: 10%;
+    }
+    .overlay {
+        height: 250px;
+        width: 360px;
+    }
+    .text {
+        font-size: 200%;
+    }
+
+
+}
+
 

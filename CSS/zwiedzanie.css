@@ -626,14 +626,43 @@ ul{
     background-color: #2e88fd;
     color: white;
 }
-@media screen and (max-width: 1200px) {
+.top_przycisk{
+    width: 80px;
+    height: 80px;
+}
+
+
+/* @media screen and (max-width: 1200px) {
     #backToTop {
         right: 1vw;
     }
-}
+} */
+
+/* Ustawienia dla telefonu */
 @media screen and (max-width: 500px) {
     #backToTop {
         right: 1vw;
     }
+    #lista > a >img{
+        width: 360px;
+        height: 250px;
+        border-radius: 10%;
+    }
+    .overlay {
+        height: 250px;
+        width: 360px;
+    }
+    .text {
+        font-size: 200%;
+    }
+    .top_przycisk{
+        width: 40px;
+        height: 40px;
+    }
+    #content{
+        width: 100%;
+    }
+    
+
 }
 
