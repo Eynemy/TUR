@@ -7,9 +7,9 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=59.3293&longitude=18.0686
         weatherCard.className = 'weather-card';
         weatherCard.innerHTML = `
             <h3>Dzień ${i + 1}</h3>
-            <p>Temperatura maksymalna: ${data.daily.temperature_2m_max[i]}°C</p>
-            <p>Temperatura minimalna: ${data.daily.temperature_2m_min[i]}°C</p>
-            <p>Opady: ${data.daily.precipitation_sum[i]}mm</p>
+            <p>Temperatura maksymalna: <b> ${data.daily.temperature_2m_max[i]}°C</b></p>
+            <p>Temperatura minimalna: <b> ${data.daily.temperature_2m_min[i]}°C</b></p>
+            <p>Opady: <b> ${data.daily.precipitation_sum[i]}mm</b></p>
         `;
         weatherContainer.appendChild(weatherCard);
     }
