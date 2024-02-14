@@ -1,6 +1,7 @@
+/* Dodanie tla */
 #content{
     margin: 0;
-    background-image: url("TUR/Obrazy/tlo3.jpg");
+    background-image: url("/TUR/Obrazy/tlo3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
