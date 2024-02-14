@@ -84,17 +84,6 @@ h6 > a:hover{
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Stylizacja HR -=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
 /* Hr - Szwecja */
-.hr_szwecja{
-    /* border: none;
-    height: 2px;
-    background: linear-gradient(to right, white, #005cbf, #ffc720, #005cbf, white);
-    width: 100%;
-    margin: auto;
-    margin-top: 20px; */
-    /* border: none;
-    height: 2px;
-    background: linear-gradient(to right, #005cbf, #ffc720); */
-}
 
 .hr_szwecja {
     margin-top: 20px; 
