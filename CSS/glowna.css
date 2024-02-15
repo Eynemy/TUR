@@ -15,6 +15,6 @@
     #content{
     background-image: url("/TUR/Obrazy/tlo-telefon.jpeg");
     background-size: 767px;
-    background-position: center center;
+    /* background-position: center center; */
     }
 }
