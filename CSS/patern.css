@@ -237,6 +237,9 @@ footer{
     }
 
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 535px) {
+    #strona_glowna{
     
+        display: none;
+    }
 }
