@@ -11,3 +11,10 @@
     color: wheat;
     border-radius: 2% 2% 0 0;
 }
+@media screen and (max-width: 767px) {
+    #content{
+    background-image: url("/TUR/Obrazy/tlo-telefon.jpeg");
+    background-size: 767px;
+    background-position: center center;
+    }
+}

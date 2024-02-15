@@ -85,20 +85,34 @@ h1{
     font-family: 'Protest Strike', sans-serif;
     
 } 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
     #lista > a >img{
-        width: 360px;
-        height: 250px;
+        width: 410px;
+        height: 312px;
         border-radius: 10%;
     }
     .overlay {
-        height: 250px;
-        width: 360px;
+        height: 312px;
+        width: 410px;
     }
     .text {
-        font-size: 200%;
+        font-size: 260%;
     }
-
+    #content{
+        width: 100%;
+    }
+    #lista{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    h1{
+        font-size: 46px;
+    }
+    h6{
+        font-size: 14px;
+    }
 
 }
 

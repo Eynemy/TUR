@@ -639,7 +639,7 @@ ul{
 } */
 
 /* Ustawienia dla telefonu */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
     #backToTop {
         right: 1vw;
     }
@@ -658,11 +658,39 @@ ul{
     .top_przycisk{
         width: 40px;
         height: 40px;
+        background-color: rgb(0, 0, 0,0.5);
+        border-radius: 20%;
     }
     #content{
         width: 100%;
     }
-    
+    p{
+        font-size: 18px;
+    }
+    ul{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 46px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    h6 > a{
+        font-size: 14px;
+    }
+    #more_than > img {
+        width: 14px;
+        height: 14px;
+        top: 0.3vw;
+    }
+    .spis > ol {
+        font-size: 20px;
+    }
+
 
 }
 

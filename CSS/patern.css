@@ -24,17 +24,59 @@ header{
     align-items: center;
     background-color: white;
 }
-#logo{
-    /* padding-right: 20px; */
-    padding-right: 0.4vw;
-    padding-left: 2vw;
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
 }
+
+#logo_name {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-left: 3%;
+}
+
+#logo, #name {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav, #Wyszukiwarka {
+    display: flex;
+    align-items: center;
+}
+
+#logo, #name {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav, #Wyszukiwarka {
+    display: flex;
+    align-items: center;
+}
+#Wyszukiwarka {
+    width: 150px;
+    padding-right: 3%;
+    /* position: relative; */
+}
+
 #name{
-    padding-right: 25%;
     font-size: 130%;
     font-family: 'Carter One', system-ui;
     color: rgb(37, 37, 95);
 }
+
+.nav{
+    background-color: rgb(255, 255, 255); 
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+} 
 
 /* -=-=-=-=-=-=-=-=-= Stopka -=-=-=-=-=-=-=-=-= */
 footer{
@@ -47,13 +89,6 @@ footer{
 }
 
 /* -=-=-=-=-=-=-=-=-= Nawigacja -=-=-=-=-=-=-=-=-= */
-.nav{
-    background-color: rgb(255, 255, 255); 
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-} 
 .nav > ol{
     padding: 10px;
     margin:0;
@@ -72,7 +107,8 @@ footer{
 }
 .nav > ol > li{
     float: left;
-    width: 150px;
+    /* width: 150px; */
+    padding-left: 20px;
     height: 40px;   
 }
 .nav > ol > li:hover{ 
@@ -114,16 +150,17 @@ footer{
     width: 50%;
     left: 0;
 }
-
 /* -=-=-=-=-=-= Wyszukiwarka -=-=-=-=-=-= */
+
 #myUL {
     position: absolute;
+    top: 47px;
     display: none;
     background-color: white;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 7%;
+    width: 150px;
     min-width: 90px;
     z-index: 99;
     border: 1px solid #ddd;
@@ -144,7 +181,7 @@ footer{
 }
 #myInput {
     position: relative;
-    width: 50%; 
+    width: 100%; 
     font-size: 16px; 
     padding: 10px 11px 10px 11px; 
     border: 1px solid #ddd; 
@@ -159,7 +196,7 @@ footer{
 #myUL li:hover {
     background-color: #eee; 
 }
-
+/* Sticky */
 .sticky{
     width: 100%;
     position: fixed; 
@@ -167,6 +204,7 @@ footer{
     top: 0;  
     z-index: 100; 
 }
+/* Przyck do gory */
 #backToTop{
     position: fixed;
     bottom: -100px;
@@ -178,20 +216,27 @@ footer{
 .gora {
     bottom: 50px !important;
 }
-
-@media screen and (max-width: 1398px) {
+/*  */
+@media screen and (max-width: 767px) {
+    #logo_name {
+        padding-left: 2px;
+    }
     #name{
-        padding-right: 2%;
+        font-size: 18px;
     }
-    .nav > ol > li{
-        width: 80px;
-         
+    #Wyszukiwarka {
+        padding-right: 2px;
+        width: 70px;
     }
-    .nav > ol > .liwieksze{
-        width: 150px;
+    .nav > ol {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .nav > ol > li {
+        padding-left: 10px;
     }
 
-    #myInput{
-        width: 20px;
-    }
+}
+@media screen and (max-width: 767px) {
+    
 }
