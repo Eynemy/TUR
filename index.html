@@ -16,7 +16,7 @@
         </div>
         <div class="nav">
             <ol>
-                <li><a href="/TUR/index.html"><span class="text-underline">Strona główna</span></a></li>
+                <li id="strona_glowna"><a href="/TUR/index.html"><span class="text-underline">Strona główna</span></a></li>
                 <li><a href="/TUR/Podstrony/kraje/kraje.html"><span class="text-underline">Kraje</span></a></li>
                 <li><a href="/TUR/Podstrony/Odwiedzone/odwiedzone.html"><span class="text-underline">Odwiedzone</span></a></li>
                 <li><a href="/TUR/Podstrony/Info/informacje.html"><span class="text-underline">Info</span></a></li>
@@ -26,40 +26,99 @@
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Szukaj..." autocomplete="off">
             <ul id="myUL">
                 <!-- Norwegia -->
-                <li><a href="Podstrony/kraje/Norwegia/Norwegia.html">Norwegia</a></li>
-                <li><a href="Podstrony/kraje/Norwegia/Haugesund.html">Haugesund</a></li>
-                <li><a href="Podstrony/kraje/Norwegia/Trondheim.html">Trondheim</a></li>
-                <li><a href="Podstrony/kraje/Norwegia/Ålesund.html">Alesund (Ålesund)</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Norwegia.html">Norwegia</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Haugesund.html">Haugesund</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Trondheim.html">Trondheim</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Ålesund.html">Alesund (Ålesund)</a></li>
                 <!--                 
-                <li><a href="Podstrony/kraje/Norwegia/Stavanger.html">Stavanger</a></li>
-                <li><a href="Podstrony/kraje/Norwegia/Bergen.html">Bergen</a></li>
-                <li><a href="Podstrony/kraje/Norwegia/Oslo.html">Oslo</a></li>
-                <li><a href="Podstrony/kraje/Norwegia/Tromø.html">Tromso (Tromø)</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Stavanger.html">Stavanger</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Bergen.html">Bergen</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Oslo.html">Oslo</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Tromø.html">Tromso (Tromø)</a></li>
                 -->
 
                 <!-- Szwecja -->
-                <li><a href="Podstrony/kraje/Szwecja/Szwecja.html">Szwecja (Sverige)</a></li>
-                <li><a href="Podstrony/kraje/Szwecja/Sztokholm.html">Sztokholm</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Szwecja.html">Szwecja (Sverige)</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Sztokholm.html">Sztokholm</a></li>
                 <!-- 
-                <li><a href="Podstrony/kraje/Szwecja/Goteborg.html">Goteborg</a></li>
-                <li><a href="Podstrony/kraje/Szwecja/Malmo.html">Malmo</a></li>
-                <li><a href="Podstrony/kraje/Szwecja/Skelleftea.html">Skelleftea</a></li>
-                <li><a href="Podstrony/kraje/Szwecja/Vaxjo.html">Vaxjo</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Goteborg.html">Goteborg</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Malmo.html">Malmo</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Skelleftea.html">Skelleftea</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Vaxjo.html">Vaxjo</a></li>
                 -->
 
                 <!-- Malta -->
-                <li><a href="Podstrony/kraje/malta.html">Malta</a></li>
+                <li><a href="/TUR/Podstrony/kraje/malta.html">Malta</a></li>
                 <!--  -->
-                <li><a href="Podstrony/kraje/Włochy/Włochy.html">Włochy</a></li>
-                <li><a href="Podstrony/kraje/Włochy/Rimini.html">Rimini</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Włochy/Włochy.html">Włochy</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Włochy/Rimini.html">Rimini</a></li>
                 <!--                 
-                <li><a href="Podstrony/kraje/Włochy/"></a></li>
+                <li><a href="/TUR/Podstrony/kraje/Włochy/"></a></li>
                 -->
 
-                <!-- <li><a href="Podstrony/kraje"></a></li> -->
+                <!-- <li><a href="/TUR/Podstrony/kraje"></a></li> -->
             </ul>
         </div>
-    </header><div style="clear: both;"></div>
+        <button class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div id="side-menu" class="side-nav">
+            <div class="menu-content">
+                <div id="logo_name">
+                    <div id="logo"><img src="/TUR/Obrazy/ikona.png" width="50px" alt=""></div>
+                    <div id="name"><b>EN TUR</b></div>
+                </div>
+                <div class="nav_hamburger">
+                    <ol>
+                        <li id="strona_glowna"><a href="/TUR/index.html"><span class="text-underline">Strona główna</span></a></li>
+                        <li><a href="/TUR/Podstrony/kraje/kraje.html"><span class="text-underline">Kraje</span></a></li>
+                        <li><a href="/TUR/Podstrony/Odwiedzone/odwiedzone.html"><span class="text-underline">Odwiedzone</span></a></li>
+                        <li><a href="/TUR/Podstrony/Info/informacje.html"><span class="text-underline">Info</span></a></li>
+                    </ol>
+                </div>
+                <div id="Wyszukiwarka_hamburger">
+                    <input type="text" id="myInput_hamburger" onkeyup="Funkcja_wyszukiwarka_hamburger()" placeholder="Szukaj..." autocomplete="off">
+                    <ul id="myUL_hamburger">
+                        <!-- Norwegia -->
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Norwegia.html">Norwegia</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Haugesund.html">Haugesund</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Trondheim.html">Trondheim</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Ålesund.html">Alesund (Ålesund)</a></li>
+                        <!--                 
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Stavanger.html">Stavanger</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Bergen.html">Bergen</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Oslo.html">Oslo</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Tromø.html">Tromso (Tromø)</a></li>
+                        -->
+        
+                        <!-- Szwecja -->
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Szwecja.html">Szwecja (Sverige)</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Sztokholm.html">Sztokholm</a></li>
+                        <!-- 
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Goteborg.html">Goteborg</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Malmo.html">Malmo</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Skelleftea.html">Skelleftea</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Vaxjo.html">Vaxjo</a></li>
+                        -->
+        
+                        <!-- Malta -->
+                        <li><a href="/TUR/Podstrony/kraje/malta.html">Malta</a></li>
+                        <!--  -->
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/Włochy.html">Włochy</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/Rimini.html">Rimini</a></li>
+                        <!--                 
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/"></a></li>
+                        -->
+        
+                        <!-- <li><a href="/TUR/Podstrony/kraje"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay_menu"></div>
+        </div>
+    </header>
     <div id="content">
         <Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br>
         
@@ -68,8 +127,11 @@
         </div>
     </div>
     <footer>Mateusz Zimny &COPY; 2024</footer>
-    <script src="/TUR/Skrypty/wyszukiwarka.js"></script>
-    <script src="/TUR/Skrypty/stickynav.js"></script>
-
+    <div class="Skrypty - porzadek">
+        <script src="/TUR/Skrypty/wyszukiwarka.js"></script>
+        <script src="/TUR/Skrypty/stickynav.js"></script>
+        <script src="/TUR/Skrypty/hamburger_menu.js"></script>
+        <script src="/TUR/Skrypty/wyszukiwarka_hamburger.js"></script>
+    </div>
 </body>
 </html>

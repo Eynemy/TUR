@@ -87,16 +87,16 @@ h1{
 } 
 @media screen and (max-width: 767px) {
     #lista > a >img{
-        width: 410px;
-        height: 312px;
+        width: 340px;
+        height: 236px;
         border-radius: 10%;
     }
     .overlay {
-        height: 312px;
-        width: 410px;
+        height: 236px;
+        width: 340px;
     }
     .text {
-        font-size: 260%;
+        font-size: 240%;
     }
     #content{
         width: 100%;
@@ -105,7 +105,6 @@ h1{
         display: block;
         margin-left: auto;
         margin-right: auto;
-       
     }
     h1{
         font-size: 46px;

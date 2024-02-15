@@ -59,6 +59,65 @@
                 <!-- <li><a href="/TUR/Podstrony/kraje"></a></li> -->
             </ul>
         </div>
+        <button class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div id="side-menu" class="side-nav">
+            <div class="menu-content">
+                <div id="logo_name">
+                    <div id="logo"><img src="/TUR/Obrazy/ikona.png" width="50px" alt=""></div>
+                    <div id="name"><b>EN TUR</b></div>
+                </div>
+                <div class="nav_hamburger">
+                    <ol>
+                        <li id="strona_glowna"><a href="/TUR/index.html"><span class="text-underline">Strona główna</span></a></li>
+                        <li><a href="/TUR/Podstrony/kraje/kraje.html"><span class="text-underline">Kraje</span></a></li>
+                        <li><a href="/TUR/Podstrony/Odwiedzone/odwiedzone.html"><span class="text-underline">Odwiedzone</span></a></li>
+                        <li><a href="/TUR/Podstrony/Info/informacje.html"><span class="text-underline">Info</span></a></li>
+                    </ol>
+                </div>
+                <div id="Wyszukiwarka_hamburger">
+                    <input type="text" id="myInput_hamburger" onkeyup="Funkcja_wyszukiwarka_hamburger()" placeholder="Szukaj..." autocomplete="off">
+                    <ul id="myUL_hamburger">
+                        <!-- Norwegia -->
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Norwegia.html">Norwegia</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Haugesund.html">Haugesund</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Trondheim.html">Trondheim</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Ålesund.html">Alesund (Ålesund)</a></li>
+                        <!--                 
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Stavanger.html">Stavanger</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Bergen.html">Bergen</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Oslo.html">Oslo</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Tromø.html">Tromso (Tromø)</a></li>
+                        -->
+        
+                        <!-- Szwecja -->
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Szwecja.html">Szwecja (Sverige)</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Sztokholm.html">Sztokholm</a></li>
+                        <!-- 
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Goteborg.html">Goteborg</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Malmo.html">Malmo</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Skelleftea.html">Skelleftea</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Vaxjo.html">Vaxjo</a></li>
+                        -->
+        
+                        <!-- Malta -->
+                        <li><a href="/TUR/Podstrony/kraje/malta.html">Malta</a></li>
+                        <!--  -->
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/Włochy.html">Włochy</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/Rimini.html">Rimini</a></li>
+                        <!--                 
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/"></a></li>
+                        -->
+        
+                        <!-- <li><a href="/TUR/Podstrony/kraje"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay_menu"></div>
+        </div>
     </header>
         <h1 class="top">Sztokholm</h1>
     <div id="content">
@@ -156,7 +215,7 @@
                 </div>
             <h3>Lotnisko Sztokholm Arlanda</h3>
             <div class="centrum">
-                <img src="/TUR/Obrazy/arlanda_mapa.png" alt="mapa lotniska" width="70%">
+                <img src="/TUR/Obrazy/arlanda_mapa.png" alt="mapa lotniska"  class="mapa_lotniska">
             </div>
         </div><hr class="hr_szwecja">
         <div class="Transport - porzadek">
@@ -229,13 +288,13 @@
                        
                 <div class="przyciski"> 
                     <div class="Android">
-                        <a href="https://play.google.com/store/apps/details?id=com.sl.SLBiljetter&hl=pl&gl=US&pli=1" rel="nofollow" target="_blank">Android<img src="/Obrazy/playstore.png" width="20%"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.sl.SLBiljetter&hl=pl&gl=US&pli=1" rel="nofollow" target="_blank">Android<img src="/TUR/Obrazy/playstore.png" width="20%"></a>
                     </div>
                     <div class="iOS">
-                        <a href="https://apps.apple.com/pl/app/sl-journey-planner-and-tickets/id918418291?l=pl" rel="nofollow" target="_blank">iOS<img src="/Obrazy/app-store.png" width="30%"></a>
+                        <a href="https://apps.apple.com/pl/app/sl-journey-planner-and-tickets/id918418291?l=pl" rel="nofollow" target="_blank">iOS<img src="/TUR//Obrazy/app-store.png" width="30%"></a>
                     </div>
                     <div class="Web">
-                        <a href="https://sl.se" rel="nofollow" target="_blank">Strona<img src="/Obrazy/web.png" width="30%"></a>
+                        <a href="https://sl.se" rel="nofollow" target="_blank">Strona<img src="/TUR//Obrazy/web.png" width="30%"></a>
                     </div>
                 </div>
             </div>
@@ -354,6 +413,8 @@
         <script src="/TUR/Skrypty/koszt_samolot.js"></script>
         <script src="/TUR/Skrypty/pogoda_sztokholm.js"></script>
         <script src="/TUR/Skrypty/stickynav.js"></script>
+        <script src="/TUR/Skrypty/hamburger_menu.js"></script>
+        <script src="/TUR/Skrypty/wyszukiwarka_hamburger.js"></script>
     </div>
     <a href="#Top" id="backToTop" class="">
         <img src="/TUR/Obrazy/more_than.png" class="top_przycisk">

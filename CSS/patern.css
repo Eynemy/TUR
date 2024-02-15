@@ -150,6 +150,35 @@ footer{
     width: 50%;
     left: 0;
 }
+/* Nav - hamburger menu */
+.nav_hamburger > ol{
+    padding: 10px;
+    margin:0;
+    list-style-type: none; 
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%; 
+    /* display: inline-block;  */
+}
+.nav_hamburger> ol a{
+    color: rgb(39, 37, 37);
+    text-decoration: none; 
+    display: block;
+    font-weight: normal !important;
+
+}
+.nav_hamburger > ol > li{
+    /* float: left; */
+    /* width: 150px; */
+    padding-left: 20px;
+    height: 40px;   
+}
+.nav_hamburger> ol > li:hover{ 
+    cursor: pointer;
+}
+.nav_hamburger > ol > li:hover > a{ 
+    color: #668bd1;
+}
 /* -=-=-=-=-=-= Wyszukiwarka -=-=-=-=-=-= */
 
 #myUL {
@@ -196,6 +225,62 @@ footer{
 #myUL li:hover {
     background-color: #eee; 
 }
+/* Wyszukiwarka - hamburger menu */
+#Wyszukiwarka_hamburger {
+    width: 200px;
+    margin-left: 10%;
+    margin-top: 150px;
+    padding-right: 3%;
+    position: relative;
+}
+#myUL_hamburger {
+    position: absolute;
+    top: 47px;
+    display: none;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    min-width: 90px;
+    z-index: 100;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#myUL_hamburger > li a { 
+    text-decoration: none;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    padding-right: 8px;
+}
+#myUL_hamburger.active {
+    display: block;
+}
+#myInput_hamburger {
+    position: relative;
+    display: block;
+    width: 80%; 
+    font-size: 16px; 
+    padding: 10px 11px 10px 11px; 
+    border: 1px solid #ddd; 
+    margin-top: -2px; 
+}
+#myUL_hamburger li {
+    padding: 10px; 
+    cursor: pointer; 
+    background-color: #f6f6f6; 
+    border-bottom: 1px solid #ddd; 
+}
+#myUL_hamburger li:hover {
+    background-color: #eee; 
+}
+
+
+
 /* Sticky */
 .sticky{
     width: 100%;
@@ -235,11 +320,85 @@ footer{
     .nav > ol > li {
         padding-left: 10px;
     }
-
 }
 @media screen and (max-width: 535px) {
-    #strona_glowna{
-    
+    .nav{
         display: none;
     }
+    #Wyszukiwarka {
+        display: none;
+    }
+    .hamburger {
+        display: flex !important;
+    }
+    
 }
+
+
+/* twozrenie hamburger menu - przyciski */
+.hamburger {
+   
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+.hamburger:focus {
+    outline: none;
+}
+.hamburger div {
+    width: 2rem;
+    height: 0.25rem;
+    background: black;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+    /* Dodajemy style dla naszego menu bocznego */
+    .side-nav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        /* padding-top: 60px;  */
+    }
+
+    /* Dodajemy style dla zawartości naszego menu */
+    .menu-content {
+        width: 50%;
+        height: 100%; 
+        background-color: white;
+        position: absolute; /* Pozycjonujemy .menu-content względem .side-nav */
+        transition: 0.5s; /* Dodajemy animację */
+    }
+
+    /* Dodajemy style dla przyciemnienia */
+    .overlay_menu{
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        right: 0;
+        transition: 0.5s; /* Dodajemy animację */
+    }
+
+    /* When the width of the side-nav (menu) is 0, hide it */
+    .side-nav.closed {
+        width: 0;
+    }
+
+    /* When the width of the side-nav (menu) is not 0, show it */
+    .side-nav.open {
+        width: 100%;
+    }

@@ -553,7 +553,8 @@ ul{
 }
 
 .table{
-    padding-left: 30%;
+    display: flex;
+    justify-content: center;
 }
 .table > table {
     padding-left: 2;
@@ -630,6 +631,9 @@ ul{
     width: 80px;
     height: 80px;
 }
+.mapa_lotniska{
+    width: 70%;
+}
 
 
 /* @media screen and (max-width: 1200px) {
@@ -640,13 +644,11 @@ ul{
 
 /* Ustawienia dla telefonu */
 @media screen and (max-width: 767px) {
+    body{
+        /* word-spacing: -4px; */
+    }
     #backToTop {
         right: 1vw;
-    }
-    #lista > a >img{
-        width: 360px;
-        height: 250px;
-        border-radius: 10%;
     }
     .overlay {
         height: 250px;
@@ -666,9 +668,12 @@ ul{
     }
     p{
         font-size: 18px;
+        text-align: left;
     }
     ul{
         font-size: 18px;
+        padding-left: 7%;
+        text-align: left;
     }
     h1{
         font-size: 46px;
@@ -678,6 +683,10 @@ ul{
     }
     h3{
         font-size: 22px;
+        text-align: left;
+    }
+    h5{
+font-size: 12px;
     }
     h6 > a{
         font-size: 14px;
@@ -690,7 +699,117 @@ ul{
     .spis > ol {
         font-size: 20px;
     }
-
-
+    .table > table {
+       padding: 0%;
+       font-size: 12px;
+    }
+    .mapa_lotniska{
+        width: 98%;
+    }
+    .opis_obrazka{
+        font-size: 12px;
+        top: -5px;
+    }
+    #rejsy {
+        width: 85%;
+        border-collapse: collapse;
+    }
+    .table > table {
+        margin: 0;
+    }
+    .table > table >tbody >tr > td {
+        padding: 6px 7px;
+    }
+    .table > table > tbody>tr>th{
+        padding: 6px 7px;
+    }
+    .img-zoom{
+        width: 98%;
+    }
+    #Aplikacja_img {
+        width: 40%;
+    }
+    #Aplikacja_strona {
+        width: 98%;
+    }
+    .Android {
+        width: 120px;
+        height: 40px;
+    }
+    .Android a{
+        font-size: 15px;
+    }
+    .Android > a > img {
+        top: -1px;
+    }
+    .iOS{
+        width: 100px;
+        height: 40px;
+    }
+    .iOS a{
+        font-size: 15px;
+    }
+    .iOS > a > img {
+        top: -1px;
+        width: 30%;
+    }
+    .Web{
+        width: 120px;
+        height: 40px;
+    }
+    .Web a{
+        font-size: 15px;
+    }
+    .Web > a > img {
+        top: -1px;
+        width: 22%;
+    }
+    .pogoda_img {
+        width: 95%;
+    }
+    .mapa iframe {
+        /* width: 500px;
+        padding-left: -110px;
+        height: 100%; */
+    }
+    .mapa {
+        width: 95%;
+        height: 222px;
+    }
+    .Airbnb{
+        width: 120px;
+        height: 40px;
+    }
+    .Airbnb a{
+        font-size: 15px;
+    }
+    .booking{
+        width: 120px;
+        height: 40px;
+    }
+    .booking a{
+        font-size: 15px;
+    }
+    .nasze{
+        width: 120px;
+        height: 40px;
+    }
+    .nasze a{
+        font-size: 15px;
+    }
+    .Wizz_Air{
+        width: 120px;
+        height: 40px;
+    }
+    .Wizz_Air a{
+        font-size: 15px;
+    }
+    .Ryanair{
+        width: 120px;
+        height: 40px;
+    }
+    .Ryanair a{
+        font-size: 15px;
+    }
 }
 
