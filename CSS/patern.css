@@ -227,7 +227,7 @@ footer{
 }
 /* Wyszukiwarka - hamburger menu */
 #Wyszukiwarka_hamburger {
-    width: 200px;
+    width: 80%;
     margin-left: 10%;
     margin-top: 150px;
     padding-right: 3%;
@@ -320,6 +320,7 @@ footer{
     .nav > ol > li {
         padding-left: 10px;
     }
+    
 }
 @media screen and (max-width: 600px) {
     .nav{
@@ -332,6 +333,11 @@ footer{
         display: flex !important;
     }
     
+}
+@media screen and (max-width: 350px) {
+    .overlay_menu{
+        background-color: rgba(0,0,0,0) !important;
+    }  
 }
 
 
@@ -377,6 +383,7 @@ footer{
     /* Dodajemy style dla zawartości naszego menu */
     .menu-content {
         width: 50%;
+        min-width: 169px;
         height: 100%; 
         background-color: white;
         position: absolute; /* Pozycjonujemy .menu-content względem .side-nav */

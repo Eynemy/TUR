@@ -1,13 +1,21 @@
 
 
-
+#background-image {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    object-fit: cover; 
+}
 
 body{
     margin: 0;
-    background-image: url("/TUR/Obrazy/tlo3.jpg");
+    /* background-image: url("/TUR/Obrazy/tlo3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
 }
 
 /* Główny blok */
@@ -643,10 +651,14 @@ ul{
 } */
 
 /* Ustawienia dla telefonu */
-@media screen and (max-width: 767px) {
-    body{
-        /* word-spacing: -4px; */
+
+@media screen and (max-width: 1028px) {
+    #backToTop {
+        right: 0.5vw !important;
     }
+}
+@media screen and (max-width: 767px) {
+
     #backToTop {
         right: 1vw;
     }
@@ -686,7 +698,7 @@ ul{
         text-align: left;
     }
     h5{
-font-size: 12px;
+        font-size: 12px;
     }
     h6 > a{
         font-size: 14px;
@@ -812,4 +824,54 @@ font-size: 12px;
         font-size: 15px;
     }
 }
+@media screen and (max-width: 400px) {
+    #background-image {
+        top: 0 !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .table > table {
+        width: 100%;
+        padding: 0;
+        min-width: 2px !important;
+        box-shadow: 0;
+    }
+    .przyciski {
+        gap: 10px;
+    }
+    .Android {
+        width: 35%;
+        height: 35px;
+    }
+    .Android a{
+        font-size: 14px;
+    }
+    .Android > a > img {
+        top: -1px;
+    }
+    .iOS{
+        width: 27%;
+        height: 35px;
+    }
+    .iOS a{
+        font-size: 14px;
+    }
+    .iOS > a > img {
+        top: -1px;
+        width: 30%;
+    }
+    .Web{
+        width: 33%;
+        height: 35px;
+    }
+    .Web a{
+        font-size: 14px;
+    }
+    .Web > a > img {
+        top: -1px;
+        width: 22%;
+    }
+
+}
+
 
