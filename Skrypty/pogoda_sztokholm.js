@@ -44,12 +44,21 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=59.3293&longitude=18.0686
         else if(temp_min < 0){
             min_kolor +='blue';
         }
-        var Dzien = 
-        
+        var Dzien;
+        if (i == 0){
+            Dzien="Dzisiaj";
+        }
+        if(i == 1){
+            Dzien="Jutro";
+        }
+        if(i == 2){
+            Dzien="Pojutrze";
+        }
+        // <h3>Dzień ${i + 1}</h3>
         
         weatherCard.className = 'weather-card';
         weatherCard.innerHTML = `
-            <h3>Dzień ${i + 1}</h3>
+            <h3>${Dzien}</h3>
             <img src="${poziom_deszczu}" width="40px">
             <p>Temperatura max: <b style=" ${max_kolor};"> ${data.daily.temperature_2m_max[i]}°C</b></p>
             <p>Temperatura min: <b style=" ${min_kolor};"> ${data.daily.temperature_2m_min[i]}°C</b></p>
