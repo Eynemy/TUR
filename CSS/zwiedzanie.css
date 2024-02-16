@@ -642,7 +642,9 @@ ul{
 .mapa_lotniska{
     width: 70%;
 }
-
+.skala{
+    width: 20px;
+}
 
 /* @media screen and (max-width: 1200px) {
     #backToTop {
