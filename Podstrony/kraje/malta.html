@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/TUR/CSS/patern.css">
+    <link rel="stylesheet" type="text/css" href="/TUR/CSS/zwiedzanie.css">
+    <link rel="shortcut icon" type="image/ico" href="/TUR/Obrazy/logo.ico">
+    <title>en tur</title>
+</head>
+<body>
+    <header id="navbar">
+        <div id="logo_name">
+            <div id="logo"><img src="/TUR/Obrazy/ikona.png" width="50px" alt=""></div>
+            <div id="name"><b>EN TUR</b></div>
+        </div>
+        <div class="nav">
+            <ol>
+                <li id="strona_glowna"><a href="/TUR/index.html"><span class="text-underline">Strona główna</span></a></li>
+                <li><a href="/TUR/Podstrony/kraje/kraje.html"><span class="text-underline">Kraje</span></a></li>
+                <li><a href="/TUR/Podstrony/Odwiedzone/odwiedzone.html"><span class="text-underline">Odwiedzone</span></a></li>
+                <li><a href="/TUR/Podstrony/Info/informacje.html"><span class="text-underline">Info</span></a></li>
+            </ol>
+        </div>
+        <div id="Wyszukiwarka">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Szukaj..." autocomplete="off">
+            <ul id="myUL">
+                <!-- Norwegia -->
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Norwegia.html">Norwegia</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Haugesund.html">Haugesund</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Trondheim.html">Trondheim</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Ålesund.html">Alesund (Ålesund)</a></li>
+                <!--                 
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Stavanger.html">Stavanger</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Bergen.html">Bergen</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Oslo.html">Oslo</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Norwegia/Tromø.html">Tromso (Tromø)</a></li>
+                -->
+
+                <!-- Szwecja -->
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Szwecja.html">Szwecja (Sverige)</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Sztokholm.html">Sztokholm</a></li>
+                <!-- 
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Goteborg.html">Goteborg</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Malmo.html">Malmo</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Skelleftea.html">Skelleftea</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Szwecja/Vaxjo.html">Vaxjo</a></li>
+                -->
+
+                <!-- Malta -->
+                <li><a href="/TUR/Podstrony/kraje/malta.html">Malta</a></li>
+                <!--  -->
+                <li><a href="/TUR/Podstrony/kraje/Włochy/Włochy.html">Włochy</a></li>
+                <li><a href="/TUR/Podstrony/kraje/Włochy/Rimini.html">Rimini</a></li>
+                <!--                 
+                <li><a href="/TUR/Podstrony/kraje/Włochy/"></a></li>
+                -->
+
+                <!-- <li><a href="/TUR/Podstrony/kraje"></a></li> -->
+            </ul>
+        </div>
+        <button class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div id="side-menu" class="side-nav">
+            <div class="menu-content">
+                <div id="logo_name">
+                    <div id="logo"><img src="/TUR/Obrazy/ikona.png" width="50px" alt=""></div>
+                    <div id="name"><b>EN TUR</b></div>
+                </div>
+                <div class="nav_hamburger">
+                    <ol>
+                        <li id="strona_glowna"><a href="/TUR/index.html"><span class="text-underline">Strona główna</span></a></li>
+                        <li><a href="/TUR/Podstrony/kraje/kraje.html"><span class="text-underline">Kraje</span></a></li>
+                        <li><a href="/TUR/Podstrony/Odwiedzone/odwiedzone.html"><span class="text-underline">Odwiedzone</span></a></li>
+                        <li><a href="/TUR/Podstrony/Info/informacje.html"><span class="text-underline">Info</span></a></li>
+                    </ol>
+                </div>
+                <div id="Wyszukiwarka_hamburger">
+                    <input type="text" id="myInput_hamburger" onkeyup="Funkcja_wyszukiwarka_hamburger()" placeholder="Szukaj..." autocomplete="off">
+                    <ul id="myUL_hamburger">
+                        <!-- Norwegia -->
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Norwegia.html">Norwegia</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Haugesund.html">Haugesund</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Trondheim.html">Trondheim</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Ålesund.html">Alesund (Ålesund)</a></li>
+                        <!--                 
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Stavanger.html">Stavanger</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Bergen.html">Bergen</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Oslo.html">Oslo</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Norwegia/Tromø.html">Tromso (Tromø)</a></li>
+                        -->
+        
+                        <!-- Szwecja -->
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Szwecja.html">Szwecja (Sverige)</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Sztokholm.html">Sztokholm</a></li>
+                        <!-- 
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Goteborg.html">Goteborg</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Malmo.html">Malmo</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Skelleftea.html">Skelleftea</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Szwecja/Vaxjo.html">Vaxjo</a></li>
+                        -->
+        
+                        <!-- Malta -->
+                        <li><a href="/TUR/Podstrony/kraje/malta.html">Malta</a></li>
+                        <!--  -->
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/Włochy.html">Włochy</a></li>
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/Rimini.html">Rimini</a></li>
+                        <!--                 
+                        <li><a href="/TUR/Podstrony/kraje/Włochy/"></a></li>
+                        -->
+        
+                        <!-- <li><a href="/TUR/Podstrony/kraje"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay_menu"></div>
+        </div>
+    </header>
+        <h1 class="top">Malta</h1>
+    <div id="content">
+        <div class="sciezka - porzadek">
+            <h6>
+                <a href="/TUR/index.html">Strona Główna</a>
+                <span id="more_than"><img src="/TUR/Obrazy/more_than.png"></span>
+                <a href="/TUR/Podstrony/kraje/kraje.html">Kraje</a>
+                <span id="more_than"><img src="/TUR/Obrazy/more_than.png"></span>
+                <a href="/TUR/Podstrony/kraje/malta.html">Malta</a>
+            </h6>
+        </div>
+        <div class="Spis treści - porzadek">
+        <h2>Spis treści</h2>
+            <div class="spis">
+                <ol>
+                    <li><a href="#Dojazd">Dojazd z Lotniska</a></li>
+                    <li><a href="#Transport">Transport</a></li>
+                    <li><a href="#Aplikacja">Aplikacja</a></li>
+                    <li><a href="#Pogoda">Pogoda</a></li>
+                    <li><a href="#Zwiedzanie">Zwiedzanie</a></li>
+                    <li><a href="#Waluta">Waluta</a></li>
+                </ol>
+            </div>
+        </div><hr class="hr_szwecja">
+        <div class="Dojazd - porzadek">
+            <h2><a id="Dojazd_z_Lotniska">Dojazd z Lotniska</a></h2>
+            <p></p>
+            <h3>Transport autobusowy</h3>
+            <p>.... Lista połączeń dostępna jest na <a href="" rel="nofollow" target="_blank" class="link">stronie internetowej lotniska</a>.</p>
+            <ul>
+                <li>
+                    ... Szczegółowy rozkład jazdy znajduje się na 
+                    <a href="" target="_blank" class="link">stronie przewoźnika</a>.
+                    Bilet w jedną stronę kosztuje ...
+                </li>
+                
+            </ul>
+           
+                <p class="centrum">Informacje o środkach komunikacji</p>
+                <div class="table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Rodzaj</th>
+                                <th>Czas przejazdu</th>
+                                <th>Cena biletu</th>
+                                <th>Dodatkowe info</th>
+                            </tr>
+                            <tr>
+                                <td>Środek komunikacji</td>
+                                <td>Czas</td>
+                                <td>Cena</td>
+                                <td><a href="link" rel="nofollow" target="_blank" class="link">www</a></td>
+                            </tr>
+                            <tr>
+                                <td>Środek komunikacji</td>
+                                <td>Czas</td>
+                                <td>Cena</td>
+                                <td><a href="link" rel="nofollow" target="_blank" class="link">www</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <h3>Lotnisko Malta</h3>
+            <div class="centrum">
+                <img src="" alt="mapa lotniska"  class="mapa_lotniska">
+            </div>
+        </div><hr class="hr_szwecja">
+        <div class="Transport - porzadek">
+            <h2><a id="Transport">Transport</a></h2>
+            <p></p>
+
+            <h2>Mapa komunikacji</h2>
+            <div class="img-zoom">
+                <img src="mapa_kominikacji" alt="mapa_transportu">
+            </div>
+        </div><hr class="hr_szwecja">
+        <div class="Aplikacja - porzadek">
+            <h2><a id="Aplikacja">Aplikacja</a></h2>
+            <div class="centrum">
+
+                <div class="Aplikacja">
+                    <img src="aplikacja" alt="Aplikacja" id="Aplikacja_img">
+                    <img src="aplikacja" alt="Aplikacja"  id="Aplikacja_img">
+                </div>
+                <P class="opis_obrazka">Aplikacja</P>
+                <img src="strona" alt="Strona" id="Aplikacja_strona">
+                <P class="opis_obrazka">Strona</P>
+                       
+                <div class="przyciski"> 
+                    <div class="Android">
+                        <a href="" rel="nofollow" target="_blank">Android<img src="/TUR/Obrazy/playstore.png" width="20%"></a>
+                    </div>
+                    <div class="iOS">
+                        <a href="" rel="nofollow" target="_blank">iOS<img src="/TUR//Obrazy/app-store.png" width="30%"></a>
+                    </div>
+                    <div class="Web">
+                        <a href="" rel="nofollow" target="_blank">Strona<img src="/TUR//Obrazy/web.png" width="30%"></a>
+                    </div>
+                </div>
+            </div>
+            <h3>Typy biletów:</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <p></p>
+            <h3>Rodzaje biletów:</h3>
+            <ul>
+                <li>normalny</li>
+            </ul>
+            <h3>Bilety ulgowe</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <p>Więcej informacji na temat zniżek <a href="" rel="nofollow" target="_blank" class="link">na stronie ...</a>.</p>
+        </div><hr class="hr_szwecja">
+        <div class="pogoda_div">
+            <h2><a id="Pogoda">Pogoda</a></h2>
+            <h3>Trzydniowa prognoza pogody dla Malty</h3>
+            <p class="opis_obrazka">* Prognoza jest pobierana na bieżąco z: <a href="https://open-meteo.com" target="_blank" rel="nofollow" class="link">open-meteo.com</a><p>
+            <P>Skala: 
+                <img src="/TUR/Obrazy/bardzo lekki deszcz.png" class="skala">
+                <img src="/TUR/Obrazy/lekki deszcz.png" class="skala">
+                <img src="/TUR/Obrazy/umiarkowany deszcz.png" class="skala">
+                <img src="/TUR/Obrazy/ulewny1.png" class="skala">
+                <img src="/TUR/Obrazy/nawałnica.png" class="skala">
+            </P>
+            <div id="weather" class="weather-container"></div>
+            
+            <br>
+            <a href=""><img src="" alt="temperatura" class="pogoda_img"></a>
+            <p class="opis_obrazka">Prognoza temperatur i opadów</p>
+            <a href=""><img src="" alt="słońce" class="pogoda_img"></a>
+            <p class="opis_obrazka">Ilość godzin słonecznych</p>
+        </div><hr class="hr_szwecja">
+        <div class="Zwiedzanie - porzadek">
+            <h2><a id="Zwiedzanie">Zwiedzanie</a></h2>
+            
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1RhrEldSopRlnZXh4B3gasMe-kPIMhwQ&ehbc=2E312F&z=11"></iframe> <!--dodac &z=9 do linku jako przyblizenie-->
+            </div>
+        </div><hr class="hr_szwecja">
+        <div class="Kurs walut - porzadek">
+            <h2><a id="Waluta">Kurs Waluty</a></h2>
+            <div id="kurs_waluty">
+                <p>Waluta Malty to:  Euro</p>
+                <p>Aktualny kurs 1 Euro to: <span id="" style="font-weight: 900;"></span> PLN</p>
+                <p class="opis_obrazka">* Kurs jest aktualizowany na bieżąco z <a href="https://nbp.pl" target="_blank" rel="nofollow" class="link">NBP</a></p>
+            
+                <h3>Przelicznik walut</h3>
+                <!-- <input type="number" id="pln_to_sek" class="currency-input" placeholder="SEK">
+                <button onclick="convertPLN_to_SEK()" class="currency-button">Przelicz na PLN</button>
+                <p id="sek_wynik" class="result"></p>
+            
+                <input type="number" id="sekt_to_pl" class="currency-input" placeholder="PLN">
+                <button onclick="convertSEK_to_PLN()" class="currency-button">Przelicz na SEK</button>
+                <p id="sek_pln_wynik" class="result"></p> -->
+            </div>
+        </div>
+        <br><h5>Ostatnia Aktualizacja: <span style="color: red;">17.02.2024</span></h5><br>
+    </div>
+
+    <footer>Mateusz Zimny &COPY; 2024</footer>
+   
+    <div class="Skrypty - porzadek">
+        <script src="/TUR/Skrypty/przybliz.js"></script>
+        <script src="/TUR/Skrypty/wyszukiwarka.js"></script>
+        <script src="/TUR/Skrypty/Aktualny_kurs_SEK.js"></script>
+        <script src="/TUR/Skrypty/koszt_samolot.js"></script>
+        <script src="/TUR/Skrypty/pogoda_sztokholm.js"></script>
+        <script src="/TUR/Skrypty/stickynav.js"></script>
+        <script src="/TUR/Skrypty/hamburger_menu.js"></script>
+        <script src="/TUR/Skrypty/wyszukiwarka_hamburger.js"></script>
+
+        <a href="#Top" id="backToTop" class=""><img src="/TUR/Obrazy/more_than.png" class="top_przycisk"></a>
+        <img src="/TUR/Obrazy/tlo3.jpg" id="background-image">
+    </div>
+    
+</body>
+</html>

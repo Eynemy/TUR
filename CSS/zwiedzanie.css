@@ -547,7 +547,10 @@ ul{
 .pogoda_img{
     width: 50%;
 }
-
+.aplikacja{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #Aplikacja_img{
     /* width: 500px; */
