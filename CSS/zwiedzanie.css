@@ -725,9 +725,15 @@ ul{
     #content{
         width: 100%;
     }
-    p{
+    p,.p{
         font-size: 18px;
         text-align: left;
+    }
+    .ktxtb{
+        font-size: 14px;
+    }
+    .ktxt {
+        font-size: 14px;
     }
     ul{
         font-size: 18px;
