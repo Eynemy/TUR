@@ -158,6 +158,15 @@ p{
     
     font-size: 1.5em;
 }
+.p{
+    margin-right: 2%;
+    margin-left: 2%;
+    /* text-align: justify; */
+
+    color: rgb(43, 43, 43);
+    
+    font-size: 1.5em;
+}
 
 ul > li{
     /* padding-left: 2%; */
@@ -579,7 +588,7 @@ ul{
 }
 
 .table > table > tbody >tr > th {
-    background-color: #009879;
+    background-color: 	#008080;
     color: #ffffff;
     text-align: left;
 }
@@ -598,7 +607,7 @@ ul{
 }
   
 .table > table > tbody >tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid 	#008080;
 }
 
 .link{
@@ -635,7 +644,7 @@ ul{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #2e88fd;
+    background-color: #008080;
     color: white;
 }
 .top_przycisk{
@@ -648,15 +657,48 @@ ul{
 .skala{
     width: 20px;
 }
-
-/* @media screen and (max-width: 1200px) {
-    #backToTop {
-        right: 1vw;
-    }
-} */
-
-/* Ustawienia dla telefonu */
-
+/* KOMENTARZ - DYMEK */
+.komentarz {
+    position: relative;
+    display: inline-block;
+}  
+.komentarz .komentarztext {
+    visibility: hidden;
+    /* width: 90px; */
+    padding: 0 5px 0 5px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    border-radius: 6px;
+  
+    /* Position the komentarz text */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -90%;
+  
+    /* Fade in komentarz */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+} 
+.komentarz:hover .komentarztext {
+    visibility: visible;
+    opacity: 1;
+}
+.ktxt{
+    margin: 7px 0px 7px 0px;
+    color: #fff;
+}
+.ktxtb{
+    margin: 3px 0px 3px 0px;
+    color: #fff;
+    font-size: 12px;
+    /* width: 90px; */
+}
+/* DOPASOWANIE ROZDZIELCZOSCI */
 @media screen and (max-width: 1028px) {
     #backToTop {
         right: 0.5vw !important;
