@@ -23,4 +23,11 @@
     ol>li>ul>li{
         font-size: 12px;
     }
+    #prawy,#lewy{
+        width: 50%;
+        float: none;
+    }
+    #prawy{
+        padding-left: 6%;
+    }
 }
