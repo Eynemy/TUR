@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden; /* Ukrywa pasek przewijania poziomego */
+}
 #content {
     position: relative;
     margin: 0;
@@ -23,12 +26,20 @@
 }
 @media screen and (max-width: 767px) {
     .odstep{
-        padding-top: 415px;
+        padding-top: 397px;
     }
+
+    #lista > a >img{
+        height: 200px;
+        width: 294px;
+        border-radius: 10%;
+    }
+    
 }
 .odstep{
     /* padding-top: 638px; */
-    padding-top: 494px;
+    /* padding-top: 476px; */
+    padding-top: 52.4vh;
 }
 
 

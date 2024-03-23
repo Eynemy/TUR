@@ -1,0 +1,26 @@
+#prawy,#lewy{
+    width: 50%;
+    float: left;
+}
+#lewy{
+    font-size: 30px ;
+}
+.nametag{
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+   #lewy{
+    font-size: 18px;
+   }
+   ol>li>ul>li{
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 400px) {
+    #lewy{
+     font-size: 12px;
+    }
+    ol>li>ul>li{
+        font-size: 12px;
+    }
+}

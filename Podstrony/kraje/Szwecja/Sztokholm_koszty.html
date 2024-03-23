@@ -1,13 +1,14 @@
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/TUR/CSS/patern.css">
-    <link rel="stylesheet" type="text/css" href="/TUR/CSS/glowna.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/TUR/CSS/swiper.css">
+    <link rel="stylesheet" type="text/css" href="/TUR/CSS/zwiedzanie.css">
     <link rel="shortcut icon" type="image/ico" href="/TUR/Obrazy/logo.ico">
+    <link rel="stylesheet" href="/TUR/CSS/koszty.css">
     <title>en tur</title>
 </head>
 <body>
@@ -121,36 +122,86 @@
             <div class="overlay_menu"></div>
         </div>
     </header>
+    <h1 class="top">Sztokholm</h1>
     <div id="content">
-        <div class="odstep"></div>
-       
-        <div class="bloki">
-            <span style="padding-top: 10px; padding-left: 10px;">Ostatnio dodane:</span>
-            <center>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div id="lista" name="Sztokholm"><a href="/TUR/Podstrony/kraje/Szwecja/Sztokholm.html"><img src="/TUR/Obrazy/Stockholm.png" alt="Sztokholm"><div class="overlay"><div class="text">Sztokholm</div></div></a></div></div>
-                    <div class="swiper-slide"><div id="lista" name="Malta"><a href="/TUR/Podstrony/kraje/malta.html"><img src="/TUR/Obrazy/Malta.png" alt="Malta"><div class="overlay"><div class="text">Malta</div></div></a></div></div>
-                    <div class="swiper-slide"><div id="lista" name="Ålesund"><a href="/TUR/Podstrony/kraje/Norwegia/Ålesund.html"><img src="/TUR/Obrazy/test.png" alt="Ålesund"><div class="overlay"><div class="text">Ålesund</div></div></a></div></div>
-                    <div class="swiper-slide"><div id="lista" name="Trondheim"><a href="/TUR/Podstrony/kraje/Norwegia/Trondheim.html"><img src="/TUR/Obrazy/test.png" alt="Trondheim"><div class="overlay"><div class="text">Trondheim</div></div></a></div></div>
-                    <div class="swiper-slide"><div id="lista" name="Haugesund"><a href="/TUR/Podstrony/kraje/Norwegia/Haugesund.html"><img src="/TUR/Obrazy/test.png" alt="Haugesund"><div class="overlay"><div class="text">Haugesund</div></div></a></div></div></div>
-                    <!-- <div class="swiper-slide"></div> -->
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </center>
+        <div class="sciezka - porzadek">
+            <h6>
+                <a href="/TUR/index.html">Strona Główna</a>
+                <span id="more_than"><img src="/TUR/Obrazy/more_than.png"></span>
+                <a href="/TUR/Podstrony/kraje/kraje.html">Kraje</a>
+                <span id="more_than"><img src="/TUR/Obrazy/more_than.png"></span>
+                <a href="/TUR/Podstrony/kraje/Szwecja/Szwecja.html">Szwecja</a>
+                <span id="more_than"><img src="/TUR/Obrazy/more_than.png"></span>
+                <a href="/TUR/Podstrony/kraje/Szwecja/Sztokholm.html">Sztokholm</a>
+                <span id="more_than"><img src="/TUR/Obrazy/more_than.png"></span>
+                <a href="/TUR/Podstrony/kraje/Szwecja/Sztokholm_koszty.html">Sztokholm Koszty</a>
+            </h6>
         </div>
+        <hr class="hr_szwecja">
+        <div class="Koszty - porzadek">
+            <div id="lewy">
+                <ol>
+                    <li>Samolot
+                        <ul>
+                            <li>Cena: 241,51 / os.</li>
+                        </ul>
+                    </li>
+                    <li>Mieszkanie
+                        <ul>
+                            <li>Cena: 177,67 / os.</li>
+                        </ul>
+                    </li>
+                    <li>Komunikacja
+                        <ul>
+                            <li>Cena:</li>
+                        </ul>
+                    </li>
+                    <li>Dojazd na lotnisko
+                        <ul>
+                            <li>Cena:</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div id="prawy">
+                <img src="/TUR/Obrazy/koszty_sztokholm.png" alt="wyliczenia" width="100%">
+            </div>
+        </div><div style="clear: both;" ></div><hr class="hr_szwecja">
+        <div class="Kalkulator - porzadek">
+            <h2 class=""><a id="Kalkulator">Kalkulator Kosztów</a></h2>
+            <div class="kalkulator_div">
+                <p class="nametag">Koszt biletu samolotowego</p>
+                <input type="number" id="koszt_lotu" class="input-field" placeholder="Koszt biletu samolotowego" value="241.51">
+                <p class="nametag">Koszt pociągu</p>
+                <input type="number" id="koszt_pociagu" class="input-field" placeholder="Koszt pociągu" value="90">
+                <p class="nametag">Koszt mieszkania</p>
+                <input type="number" id="koszt_zakwaterowania" class="input-field" placeholder="Koszt mieszkania" value="533">
+                <p class="nametag">Ilość osób</p>
+                <input type="number" id="liczba_osob" class="input-field" placeholder="Ilość osób" value="3">
+                <p class="nametag">Koszt dojazdu z lotniska</p>
+                <input type="number" id="koszt_transportu" class="input-field" placeholder="Koszt dojazdu z lotniska" value="80"><br>
+                <button onclick="obliczCalkowityKoszt()" class="calculate-button">Oblicz sumę</button>
+                <p id="calkowity_koszt" class="result"></p>
+            </div>
+        </div> <hr class="hr_szwecja">
+        <br><h5>Ostatnia Aktualizacja: <span style="color: red;">22.03.2024</span></h5><br>
     </div>
+
     <footer>Mateusz Zimny &COPY; 2024</footer>
+   
     <div class="Skrypty - porzadek">
+        <script src="/TUR/Skrypty/przybliz.js"></script>
         <script src="/TUR/Skrypty/wyszukiwarka.js"></script>
-        <!-- <script src="/TUR/Skrypty/stickynav.js"></script> -->
+        <script src="/TUR/Skrypty/Aktualny_kurs_SEK.js"></script>
+        <script src="/TUR/Skrypty/koszt_samolot.js"></script>
+        <script src="/TUR/Skrypty/pogoda_sztokholm.js"></script>
+        <script src="/TUR/Skrypty/stickynav.js"></script>
         <script src="/TUR/Skrypty/hamburger_menu.js"></script>
         <script src="/TUR/Skrypty/wyszukiwarka_hamburger.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="/TUR/Skrypty/swiper.js"></script>
     </div>
+    <a href="#Top" id="backToTop" class="">
+        <img src="/TUR/Obrazy/more_than.png" class="top_przycisk">
+    </a>
+    <img src="/TUR/Obrazy/tlo3.jpg" id="background-image">
 </body>
 </html>
