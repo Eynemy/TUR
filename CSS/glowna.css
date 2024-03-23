@@ -29,7 +29,7 @@ body {
 }
 @media screen and (max-width: 767px) {
     .odstep{
-        padding-top: 410px;
+        padding-top: 420px;
     }
 
     #lista > a >img{
