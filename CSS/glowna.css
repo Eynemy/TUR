@@ -3,6 +3,7 @@ body {
     position: fixed; /* Zapobiega przewijaniu na urządzeniach mobilnych */
     width: 100%; /* Zapewnia pełną szerokość */
     height: 100%; /* Zapewnia pełną wysokość */
+    background-color: rgb(48, 46, 46);
 }
 #content {
     position: relative;
