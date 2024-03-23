@@ -1,5 +1,8 @@
 body {
     overflow-x: hidden; /* Ukrywa pasek przewijania poziomego */
+    position: fixed; /* Zapobiega przewijaniu na urządzeniach mobilnych */
+    width: 100%; /* Zapewnia pełną szerokość */
+    height: 100%; /* Zapewnia pełną wysokość */
 }
 #content {
     position: relative;
